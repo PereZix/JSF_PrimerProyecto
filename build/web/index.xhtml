@@ -16,6 +16,25 @@
                     <f:selectItem itemLabel="Sra." itemValue="SRA"/>
                 </h:selectOneMenu>
                 <h:message for="saludo"/>
+                
+                <h:outputLabel value="Nombre: " for="nombre"/>
+                <h:inputText id="nombre" label="Nombre" required="true" value="#{registrationBean.nombre}"/>
+                <h:message for="nombre"/>
+                
+                <h:outputLabel value="Apellido: " for="apellido"/>
+                <h:inputText id="apellido" label="Apellido" required="true" value="#{registrationBean.apellido}"/>
+                <h:message for="apellido"/>
+                
+                <h:outputLabel value="Edad: " for="edad"/>
+                <h:inputText id="edad" label="Edad" size="2" value="#{registrationBean.edad}"/>
+                <h:message for="nombre"/>
+                
+                <h:outputLabel value="Email: " for="email"/>
+                <h:inputText id="email" label="Email" required="true" value="#{registrationBean.email}"/>
+                <h:message for="email "/>
+             
+                <h:panelGroup/> <!--Para que salga una celda vacia-->
+                <h:commandButton id="register" value="Registrar" action="confirmacion"/>
             </h:panelGrid>
         </h:form>
     </h:body>
